@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">ReminderApp</string>
+    <string name="toolbar_name">Reminder Event App</string>
+
+    <string name="date">Date:</string>
+    <string name="update_toolbar_name">Update Page</string>
+    <string name="About">About</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onSwitch">On</string>
+    <string name="offSwitch">Off</string>
+
+    <string name="tab_login">Login</string>
+    <string name="tab_register">Register</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="changeLanguage">Change Language</string>
+
+
+    <string name="update_Button">Update</string>
+    <string name="delete_Button">Delete</string>
+    <string name="editText_hint_detail">Reminder Title</string>
+    <string name="TextView_detail_date">Date:</string>
+    <string name="textView_time_detail">Time:</string>
+    <string name="textView_repeat_detail">Repeat:</string>
+    <string name="switch_text_detail">on/off</string>
+    <string name="switch_on">On</string>
+    <string name="switch_off">Off</string>
+    <string name="editText_title_update">Reminder Title</string>
+    <string name="textView_date_update">Date:</string>
+    <string name="textView_time_update">Time:</string>
+    <string name="textView_repeat_update">Repeat:</string>
+    <string name="switch_text_update">on/off</string>
+    <string name="textView_ınterval_update">Repeatition Interval:</string>
+    <string name="textView_repeattype_update">Type Of Repetition:</string>
+    <string name="cardView_title">Title 1</string>
+    <string name="date_cardView_text">Date:</string>
+    <string name="date_text_set_cardView">Date:</string>
+    <string name="clock_cardView_text">Clock:</string>
+    <string name="clock_text_set_cardView">Clock</string>
+    <string name="repeatno_text_cardView">RepeatNo:</string>
+    <string name="repeatNo_text_set_cardView">RepeatNo:</string>
+    <string name="repeat_type_text_cardView">Repeat Type:</string>
+    <string name="repeat_type_text_set_cardView">Repeat Type:</string>
+    <string name="title_activity_update_fragment">UpdateFragment</string>
+    <string name="tab_text_1">Update</string>
+    <string name="tab_text_2">Delete</string>
+    <string name="onswitch">on</string>
+    <string name="detail_text_size">Size:</string>
+    <string name="type_of_repetition_text">Type Of Repetition:</string>
+    <string name="day_text_detail">day</string>
+    <string name="button_save">Save</string>
+    <string name="button_delete">Delete</string>
+    <string name="text_title_login">Welcome the Reminder App</string>
+    <string name="editText_user_name">User Name</string>
+    <string name="edit_text_password">Enter your Password</string>
+    <string name="button_login">Login</string>
+    <string name="enter_your_name_editText">Enter your Name</string>
+    <string name="enter_your_email_editText">Enter your Email</string>
+    <string name="enter_your_password_editText">Enter your Password</string>
+    <string name="enter_your_repassword_editText">Enter your RePassword</string>
+    <string name="button_signup">SIGN UP</string>
+    <string name="email_edittext">Email</string>
+
+    <string name="email_can_not_be_blank">Email can not be blank </string>
+    <string name="aboutUs">We all need a little reminder to do things sometimes. We live in a world filled with distraction and various shiny things that often lead us off course of whatever it is we’re trying to do. Thus, setting reminders can not only be productive, but a savior in some situations. There are a variety of ways to use reminders on Android. You can set them up in your calendar app, a dedicated to-do list app, and there are some apps that exist only to serve up reminders when you need them. Even some note taking apps have reminder functionality built-in.</string>
+    <string name="password_can_not_be_blank">Password can not be blank....</string>
+    <string name="transaction_successfully">Transaction is Successfully...</string>
+    <string name="user_not_found">User Not Found...</string>
+    <string name="name_can_not_be_blank">Name can not be blank</string>
+    <string name="password_can_not_be_matches">Password can not be matches</string>
+    <string name="register_transaction_stopped">Register transaction stopped</string>
+    <string name="register_transaction_is_successfully">Register transaction is Successfully</string>
+    <string name="error_occured_while_recording"> An error occurred while recording</string>
+    <string name="alarm_is_set"> Alarm is set</string>
+    <string name="occured_while_deleting_record">An error occurred while deleting the record!.</string>
+    <string name="cancelled"> cancelled"</string>
+    <string name="no"> No</string>
+    <string name="message_sent" > Message Sent</string>
+    <string name="please_enter_number_or_message"> Please Enter Number or Message"</string>
+    <string name="do_not_have_required_permission"> You do not  have Required Permission to make this action"</string>
+</resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".DetailActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include
+            layout="@layout/custom_toolbar"
+            android:id="@+id/detailToolbar"/>
+
+        <LinearLayout
+
+            android:id="@+id/detailLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:layout_below="@+id/detailToolbar"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+
+            <EditText
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginRight="16dp"
+                android:hint="@string/editText_hint_detail"
+                android:inputType="text"
+                android:lines="4"
+                android:minLines="4"
+                android:scrollHorizontally="false"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/detailLinearLayout">
+
+            <TableLayout
+                android:id="@+id/tbl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/rowDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_burger" />
+
+                    <TextView
+                        android:id="@+id/lblDate"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginRight="20dp"
+                        android:padding="5sp"
+                        android:text="@string/TextView_detail_date"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_gravity="left"
+                        android:text="01.01.2021"
+                        android:textSize="10dp" />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:id="@+id/rowTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_clock" />
+
+                    <TextView
+                        android:id="@+id/lblTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginRight="30dp"
+                        android:padding="5sp"
+                        android:text="@string/textView_time_detail"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_gravity="left"
+                        android:padding="5sp"
+                        android:text="00:00"
+                        android:textSize="10dp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowRepeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingBottom="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/icoRepeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_repeat" />
+
+                    <TextView
+                        android:id="@+id/lblRepeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginRight="30dp"
+                        android:padding="5sp"
+                        android:text="@string/textView_repeat_detail"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+
+                    <Switch
+                        android:id="@+id/chkRepeat"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:checked="true"
+                        android:onClick="onSwitchRepeat"
+                        android:textOff="@string/switch_off"
+                        android:text="@string/onswitch"
+                        android:textOn="@string/switch_on"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowRepeatSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_interval" />
+
+                    <TextView
+                        android:id="@+id/lblRepeatSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginRight="30dp"
+                        android:padding="5sp"
+                        android:text="@string/detail_text_size"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtRepeatSize"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRowTypeRepetition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_typerepeat" />
+
+                    <TextView
+                        android:id="@+id/lblRepeatInterval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginRight="30dp"
+                        android:padding="5sp"
+                        android:text="Interval:"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txtRepeatInterval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginRight="30dp"
+                        android:padding="5sp"
+                        android:text=" "
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:background="@color/primaryDarkColor"
+            android:text="@string/button_save" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/black"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawermenu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

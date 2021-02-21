@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".SendMessage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/messageToolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Send Message"
+        android:textAlignment="center"
+        android:background="@color/primaryDarkColor"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtPhoneNumber"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="Enter your Message"
+        android:textSize="22sp"
+        android:gravity="top"
+        android:textColor="@color/black"
+        android:id="@+id/txtMessage"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:id="@+id/btnSend"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickSend"
+        android:text="Send"
+        />
+</LinearLayout>

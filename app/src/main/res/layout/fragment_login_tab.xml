@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="69dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:background="@drawable/custom_edittext_login"
+        android:hint="@string/email_edittext"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="304dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmail"
+        android:background="@drawable/custom_edittext_login"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:hint="@string/edit_text_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        style="@style/TextInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="29dp"
+        android:clickable="true"
+        android:textAlignment="center"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="@color/primaryDarkColor"
+        android:text="@string/button_login" />
+
+
+</RelativeLayout>

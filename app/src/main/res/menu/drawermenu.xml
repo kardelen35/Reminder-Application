@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:shownIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/writeStorage"
+            android:icon="@drawable/ic_uploads"
+            android:title="Write Text External storage" />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_message"
+            android:title="Message" />
+
+        <item
+            android:id="@+id/photo"
+            android:icon="@drawable/ic_photo"
+            android:title="Photo" />
+        <item
+            android:id="@+id/aboutUs"
+            android:icon="@drawable/ic_about_us"
+            android:title="About Us" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExternalStorage">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/primaryDarkColor"
+        app:title="Write External Storage"
+        android:id="@+id/externalToolbar"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/externalToolbar"
+        android:id="@+id/edit_text"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/edit_text"
+        android:onClick="onClickSave"
+        android:background="@drawable/custom_button"
+        android:text="Save"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_load"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickLoad"
+        android:background="@drawable/custom_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_save"
+        android:text="Load"/>
+
+
+</RelativeLayout>

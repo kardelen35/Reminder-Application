@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share"
+        android:title="Share"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="Delete"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/alarmoff"
+        android:icon="@drawable/ic_alarmoff"
+        android:title="Alarm Off"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>
